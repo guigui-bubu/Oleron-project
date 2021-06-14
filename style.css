@@ -1,0 +1,46 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.command {
+  padding: 4px 6px;
+  background: white;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 200px;
+}
+
+/*async function Oleron() {
+  await fetch("Oleron-ecluses.json")
+    .then((res) => res.json())
+    .then((data) => (coord = data.features));
+
+  coord.map((toto) => {
+    let locationEcluse = [];
+    let newLocationEcluse = [];
+    let nomEcluse = toto.properties.ancien_nom;
+    locationEcluse = toto.geometry.coordinates[0];
+    console.log(locationEcluse);
+    for (i = 0; i < locationEcluse.length; i++) {
+      newLocationEcluse = locationEcluse[i].reverse(); // inverse les Coord
+      //console.log(newLocationEcluse);
+      const check = document.getElementById("ecluse");
+      check.addEventListener("input", () => {
+        if (!check.checked) {
+          L.polygon([newLocationEcluse]).addTo(map).bindPopup(`${nomEcluse}`); // ajout de Popup
+        } else {
+          // mettre en off
+        }
+      });
+    }
+  });*/
